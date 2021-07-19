@@ -1,0 +1,472 @@
+﻿  ClassEnemy.cpp
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,69): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,51): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,97): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,65): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,58): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(255,42): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(267,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(268,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,214): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,116): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+  ClassGame.cpp
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,69): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,51): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,97): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,65): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,58): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(255,42): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(267,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(268,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,214): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,116): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(12,30): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(12,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(29,120): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(29,53): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(30,118): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(30,52): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(33,35): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(34,36): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(35,35): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(59,54): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(59,37): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(110,118): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(110,52): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(132,54): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(132,37): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(152,118): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(152,52): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(169,54): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(169,37): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+  ClassLiveObject.cpp
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,69): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,51): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,97): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,65): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,58): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(255,42): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(267,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(268,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,214): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,116): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassLiveObject.cpp(22,60): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassLiveObject.cpp(35,59): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+  ClassMusicPlayer.cpp
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,69): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,51): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,97): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,65): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,58): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(255,42): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(267,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(268,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,214): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,116): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassMusicPlayer.cpp(47,34): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+  ClassObject.cpp
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,69): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,51): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,97): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,65): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,58): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(255,42): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(267,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(268,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,214): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,116): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassObject.cpp(8,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassObject.cpp(8,22): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  ClassPlayer.cpp
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,69): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,51): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,97): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,65): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,58): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(255,42): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(267,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(268,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,214): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,116): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+  ClassPlayersGun.cpp
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,69): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,51): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,97): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,65): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,58): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(255,42): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(267,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(268,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,214): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,116): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+  ClassSpawner.cpp
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,69): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,51): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,97): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,65): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,58): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(255,42): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(267,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(268,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,214): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,116): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassSpawner.cpp(12,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  ClassStartupMenuButtons.cpp
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,69): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,51): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,97): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,65): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,58): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(255,42): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(267,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(268,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,214): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,116): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassStartupMenuButtons.cpp(6,31): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassStartupMenuButtons.cpp(6,25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassStartupMenuButtons.cpp(21,31): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassStartupMenuButtons.cpp(21,25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  Projectile.cpp
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,69): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,51): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,97): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,65): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,58): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(255,42): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(267,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(268,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,214): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,116): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+  main.cpp
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,69): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(162,51): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,97): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(227,65): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,58): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(231,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(255,42): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(267,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(268,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,214): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\Classes.h(270,116): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\main.cpp(27,161): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\main.cpp(27,110): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\main.cpp(49,58): warning C4244: =: преобразование "sf::Int64" в "float", возможна потеря данных
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\main.cpp(81,110): warning C4244: аргумент: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\main.cpp(81,64): warning C4244: аргумент: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\main.cpp(86,110): warning C4244: аргумент: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\main.cpp(86,64): warning C4244: аргумент: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\main.cpp(109,71): warning C4244: аргумент: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\main.cpp(134,17): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Создание кода...
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassPlayer.cpp(18): warning C4715: ClassPlayer::checkCollisionWithEnemy: значение возвращается не при всех путях выполнения
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(104): warning C4715: ClassGame::gameStartMenu: значение возвращается не при всех путях выполнения
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(185): warning C4715: ClassGame::endMenu: значение возвращается не при всех путях выполнения
+C:\Users\ANDMASL\Desktop\MusiCombat_v2\MusiCombat_v2\ClassGame.cpp(146): warning C4715: ClassGame::exitMenu: значение возвращается не при всех путях выполнения
+  MusiCombat_v2.vcxproj -> C:\Users\ANDMASL\Desktop\MusiCombat_v2\x64\Debug\MusiCombat_v2.exe

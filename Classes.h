@@ -1,158 +1,214 @@
 #pragma once
-#ifndef CLASSES_H
-#define CLASSES_H
-#include "Graphics.hpp"
+#ifndef CLASSEES_H
+#define CLASSEES_H
 #include "globals.h"
-#include "cmath"
 
-#define MOVEMENT_SPEED 0.001
-#define SCREEN_WIDTH 1900
-#define SCREEN_HEIGHT 800
-
-#define ENEMY_MOVEMENT_SPEED 0.3
-
-#define PI 3.14159
-#define AMMO_AMOUNT 50
-
-#define FLOOR SCREEN_HEIGHT
-#define L_WALL 0
-#define R_WALL SCREEN_WIDTH
-
-using namespace sf;
-
-class ClassObjects
-{
-	private:
-		Image newObjectImg;
-
-	protected:
-		Texture _texture;
-		Sprite _sprite;
-		int _posX;
-		int _posY;
-		Vector2u _size;
-
-	public:
-		ClassObjects(const char* textureName, int startPosX, int startPosY);
-		~ClassObjects();
-
-		void setTexture(const char* textureName);
-
-		Sprite getSprite();
-
-		void setPosition(int x, int y);
-
-		int getPositionX();
-
-		int getPositionY();
-};
-
-class ClassLiveObjects: public ClassObjects{
-	private:
-		float currentFrame = 0;
-		bool onGround;
-		bool aliveState;
-		FloatRect rectengle;
-
-		virtual void animation(const char direction);
-
-	protected:
-		int _health = 0;
-		
-	public:
-		ClassLiveObjects(const char* textureName, int startPosX, int startPosY, int health);
-		~ClassLiveObjects();
-
-		virtual void movement(const char direction, float movementSpeedDiescreaser);
-
-		void gravity();
-
-		void getDamage(int damage);
-
-		void death();
-
-		int getHealth();
-
-		bool getAliveState();
-
-		FloatRect GetRect();
-};
-
-class Player : public ClassLiveObjects {
+class ClassMusicPlayer {
 private:
-	int currentFrame = 0;
-
-	void animation(const char direction);
-protected:
+	DWORD chan;
 
 public:
-	Player(const char* textureName, int startPosX, int startPosY, int health);
-	~Player();
+	ClassMusicPlayer() {};
+	~ClassMusicPlayer() {};
 
-	void setHp(int damage);
+	int getFriquencySummery();
 
-	void movement(const char direction, float movementSpeedDiescreaser);
+	void playMusic(const char* fileName);
 
-	int getCurrentFrame();
+	void stopMusic();
+
+	int getMusicLength();
+
+	void resumeMusic();
+
+	void setMusicPosition(int secondsAmount);
+
+	int getMusicPosition();
+
+	bool endOfMusic();
+};//
+
+class ClassObject {
+private:
+	Image objectImage;
+	Texture texture;
+	Sprite sprite;
+	Vector2u size;
+
+public:
+	ClassObject(string textureName = "", int posX = 0, int posY = 0);
+	~ClassObject();
+
+	Sprite* getObjectSprite();
+
+	Vector2u* getTextureSize();
 };
- 
-class Projectile : public ClassObjects {
+
+class ClassLiveObject:public ClassObject{
+private:
+	bool alive;
+	int currentFrame = 0;
+	int maxFrameAmount;
+	int frameHeight;
+	int frameWidth;
+	float movementSpeed;
+	int health;
+	bool _movementToLeft = false;
+	bool _movementToRight = false;
+
+public:
+	ClassLiveObject(string textureName = "", int posX = 0, int posY = 0, int healthOnStart = 0, int rectWidth = 0, int rectHeight = 0);
+	~ClassLiveObject();
+
+	void updateRectCalculateFrameAmount(int rectWidth, int rectHeight);
+
+	void movementToLeft(int movementSpeedDiescreaser);
+	
+	void movementToRight(int movementSpeedDiescreaser);
+
+	void death();
+
+	bool getAliveState();
+
+	void getDamage(int damageAmount);
+
+	void animation();
+};
+
+class ClassStartupMenuButtons {
+private:
+	Font textFont;
+	Text buttonText;
+	int fontSize = 40;
+
+public:
+	ClassStartupMenuButtons(string text, int posX, int posY);
+	~ClassStartupMenuButtons();
+
+	FloatRect getButtonRectangle();
+
+	Text getButtonText();
+
+	void setNewTextPosition(int posX, int posY);
+
+	void colorTo(Color color);
+
+}; 
+
+class ClassGame {
+private:
+	int startMenuWidth = 800;
+	int startMenuHeight = 600;
+	int fontSize = 40;
+	bool gameStarted = false;
+	Font gameFont;
+
+public:
+	ClassGame();
+	~ClassGame();
+	
+	Text getTextObj(string textOfTextObj, int posX, int posY);
+
+	bool gameStartMenu();
+
+	bool exitMenu();
+
+	bool endMenu();
+
+};
+
+class Projectile : public ClassObject {
 private:
 	bool distracted;
-	bool inAir = false;
+	bool inAir;
 	int flySide = 1;
-	double _posxIncreaser;
-	FloatRect _rectangle;
+	double posYincreaser;
+	int damage = 1;
 
 public:
-	Projectile(const char* textureName = "", int startPosX = 0, int startPosY = 0);
+	Projectile(string textureName = "", int startPosX = 0, int startPosY = 0);
 	~Projectile();
 
 	void fly(double flyAngle);
 
 	void checkForMapCollision();
 
-	FloatRect getProjectileRectangle();
+	bool getDestractedState();
 
-	void projectileDistract();
+	bool getInAirState();
 
-	bool getDistractedState();
+	void setDistracted();
+
+	void setNotDistracted();
+
+	void setBulletDamage(unsigned int damage);
+
+	int getBulletDamage();
+
 };
 
-class PlayersGun: public ClassObjects {
+class ClassPlayersGun : public ClassObject {
 private:
 	double rotationAngle;
-	int width = _size.x;
-	int height = _size.y;
+	int width;
+	int height;
+	int shots = 0;
 
 public:
-	PlayersGun(const char* textureName, int startPosX, int startPosY);
-	~PlayersGun();
+	ClassPlayersGun(string textureName, int startPosX, int startPosY);
+	~ClassPlayersGun();
 
-	void followPlayer(const char direction, int posX, int posY);
+	void setParams();
+
+	void followPlayer(int posX, int posY);
 
 	void followMouse(int mousePosX, int mousePosY);
 
 	double getAngle();
 
-	void shoot();
+	void shoot(Projectile* bulletsArray, ClassMusicPlayer* music, int FriquencySummeryAtStartOfFrame);
+
+	int getShots();
 };
 
-class Enemy : public ClassLiveObjects {
+class ClassEnemy :public ClassLiveObject {
 private:
-	float speedDiescreaser = ENEMY_MOVEMENT_SPEED;
+	int enemyAmount;
 
 public:
-	Enemy(const char* textureName = "", int startPosX = 0, int startPosY = 0, int health = 0);
-	~Enemy();
+	ClassEnemy(string textureName = "", int startPosX = 0, int startPosY = 0, int health = 0, int rectWidth = 0, int rectHeight = 0);
+	~ClassEnemy();
 
-	void moveToPlayer(int PlayerPosX);
+	void moveToPlayer(int PlayerPosX, int movementSpeedDiescreaser);
 
-	bool checkCollisionWithBullet(Projectile* projectile) {
-		if (_posX == projectile->getPositionX() && _posY == projectile->getPositionY()) {
-			this->death();
-			return true;
-		}
-	}
+
+	void cheForBulletCollision(Projectile* bulletsArray);
+};
+
+class ClassPlayer :public ClassLiveObject {
+private:
+
+public:
+	ClassPlayer(string textureName = "", int startPosX = 0, int startPosY = 0, int health = 0, int rectWidth = 0, int rectHeight = 0);
+	~ClassPlayer();
+
+	bool checkCollisionWithEnemy(ClassEnemy* enemyArray, int enemyAmount);
+};
+
+class ClassSpawner {
+private:
+	int enemyAmount = 0;
+	int spawnLimit;
+	Clock spawnCoolDown;
+
+public:
+	ClassSpawner();
+	~ClassSpawner();
+
+	void setSpawnLimit(int newSpawnLimit);
+
+	void spawn(ClassEnemy* enemyArray);
+
+	int getEnemyAmount();
 };
 #endif

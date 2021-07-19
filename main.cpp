@@ -1,192 +1,144 @@
+#include "globals.h"
 #include "Classes.h"
-#include <thread>
-#include "bass.h"
-#include <cstdlib>
 
 float globalClocks;
 
-DWORD chan;
-float fft[512];
+const char* trackName = "music/1.mp3";
 
-
-
-void main(void) {
-	RenderWindow window(VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "MusiCombat");
-
-	BASS_Init(-1, 44100, 0, 0, NULL);
-	BASS_SetVolume(0.5);
-	if (!(chan = BASS_StreamCreateFile(FALSE, "da.mp3", 0, 0, BASS_SAMPLE_LOOP | BASS_SAMPLE_FLOAT))
-		&& !(chan = BASS_MusicLoad(FALSE, "da.mp3", 0, 0, BASS_MUSIC_RAMPS | BASS_SAMPLE_LOOP | BASS_SAMPLE_FLOAT, 1))) {
-		
-	}
-	BASS_ChannelPlay(chan, FALSE);
-	BASS_ChannelGetData(chan, fft, BASS_DATA_FFT1024);
-
-	std::string a;
-
-	Font font;
-	font.loadFromFile("fonts/20951.ttf");
-
-	Text txt;
-	txt.setFont(font);
-	txt.setPosition(0, 0);
-	txt.setCharacterSize(18);
-
-	float tempoInscreaser = 0;
-	unsigned int shots = 0;
-	unsigned int enemyCount = 0;
-	char playerMovementDirection;
-
-	int bulletStartPosYCorrector;
-	int bulletStartPosXCorrector;
-	int gunSpriteWidth = 100;
-	
-
+void startGame(ClassGame* game) {
+	//позиция мыши
 	Vector2i mousePosition;
 
-	Clock clock;
+	//часы
+	Clock clocks;
 	Clock gunCoolDown;
-	Clock enemyCoolDown;
-	Clock askFormTempoClock;
-	Clock askFormTempoClock2;
 
-	Player* player = new Player("textures/mario.png", SCREEN_WIDTH/2-30, SCREEN_HEIGHT-74, 10);
-	PlayersGun* gun = new PlayersGun("textures/gun.png", player->getPositionX()+20, player->getPositionY() + 35);
-	Projectile* bullets = new Projectile[AMMO_AMOUNT];
-	Enemy* enemy = new Enemy[AMMO_AMOUNT];
+	//объект окна
+	RenderWindow gameWindow(sf::VideoMode(), "MusiCombat", sf::Style::Fullscreen);
 
-	std::string coords;
+	//игрок
+	ClassPlayer* player = new ClassPlayer("textures/mario.png", SCREEN_WIDTH / 2, 1010, 5, 38, 74);
+	player->updateRectCalculateFrameAmount(38, 74);
 
-	while (window.isOpen())
+	//спавнер врагов
+	ClassSpawner* spawner = new ClassSpawner();
+
+	//оружие
+	ClassPlayersGun* gun = new ClassPlayersGun("textures/gun.png", (*player->getObjectSprite()).getPosition().x + 20, (*player->getObjectSprite()).getPosition().y + 35);
+	gun->setParams();
+
+	//плеер музыки
+	ClassMusicPlayer* musicPlayer = new ClassMusicPlayer();
+
+	musicPlayer->playMusic(::trackName);
+
+	//снаряды
+	Projectile* bullets = new Projectile[50];
+
+	//враги
+	ClassEnemy* enemy = new ClassEnemy[musicPlayer->getMusicLength()];
+
+	spawner->setSpawnLimit(musicPlayer->getMusicLength());
+
+	while (gameWindow.isOpen())
 	{
+		int FriquencySummeryAtStartOfFrame = musicPlayer->getFriquencySummery();
 
-		BASS_ChannelGetData(chan, fft, BASS_DATA_FFT1024);
-		int frik = 0;
+		mousePosition = Mouse::getPosition(gameWindow);
 
-		for (int i = 0; i < 512; i++) {
-			if (int(fft[i] * 1000) > 5) {
-				frik = frik + int(fft[i] * 1000);
-			}
-		}
-
-		mousePosition = Mouse::getPosition();
-
-		bulletStartPosYCorrector = gunSpriteWidth * sin(gun->getAngle() * PI / 180);
-		bulletStartPosXCorrector = gunSpriteWidth * cos(gun->getAngle() * PI / 180);
-
-		::globalClocks = clock.getElapsedTime().asMicroseconds();
-		clock.restart();
-		
+		::globalClocks = clocks.getElapsedTime().asMicroseconds();
+		clocks.restart();
 
 		Event event;
-		while (window.pollEvent(event))
+		while (gameWindow.pollEvent(event))
 		{
 			if (event.type == Event::Closed)
-				window.close();
+				gameWindow.close();
 		}
 
-		if (Keyboard::isKeyPressed(Keyboard::A)) {
-			playerMovementDirection = 'l';
-			player->movement(playerMovementDirection, 1);
-			gun->followPlayer(playerMovementDirection, player->getPositionX(), player->getPositionY());
-		}
-
-		if (Keyboard::isKeyPressed(Keyboard::D)) {
-			playerMovementDirection = 'r';
-			player->movement(playerMovementDirection, 1);
-			gun->followPlayer(playerMovementDirection, player->getPositionX(), player->getPositionY());
-		} 
-
-		if (Keyboard::isKeyPressed(Keyboard::E)) {
-			//BASS_ChannelPause(channel);
-		}
-		
-		if (Keyboard::isKeyPressed(Keyboard::F)) {
-			if (enemyCoolDown.getElapsedTime().asSeconds() > 0.1) {
-				enemyCoolDown.restart();
-				if (enemyCount > AMMO_AMOUNT - 1) {
-					for (int i = 0; i < enemyCount; i++) {
-						enemy[i].death();
-					}
-					enemyCount = 0;
-				}
-				else {
-					enemy[enemyCount].Enemy::Enemy("textures/enemy.png", 0, SCREEN_HEIGHT-150, 5);
-
-					enemyCount++;
-				}
+		if (Keyboard::isKeyPressed(Keyboard::Escape)) {
+			musicPlayer->stopMusic();
+			if (game->exitMenu()) {
+				gameWindow.close();
+			}
+			else {
+				musicPlayer->resumeMusic();
 			}
 		}
 
-		
-
 		if (Mouse::isButtonPressed(Mouse::Left)) {
-
-			if (gunCoolDown.getElapsedTime().asSeconds() > 0.5 - tempoInscreaser) {
-				BASS_ChannelGetData(chan, fft, BASS_DATA_FFT1024);
-				int frik2 = 0;
-
-				for (int i = 0; i < 512; i++) {
-					if (int(fft[i] * 1000) > 5) {
-						frik2 = frik2 + int(fft[i] * 1000);
-					}
-				}
-
-				if (frik2 >= frik) {
-					coords = "popal";
-				}
-				else if(frik2 < frik){
-					coords = "ne popal";
-				}
-
-				if (shots > AMMO_AMOUNT-1) {
-					for (int i = 0; i < shots; i++) {
-						bullets[i].Projectile::~Projectile();
-					}
-					shots = 0;
-				}
-				else {
-					bullets[shots].Projectile::Projectile("textures/bullet.png", gun->getPositionX() - bulletStartPosXCorrector, gun->getPositionY() - bulletStartPosYCorrector - 10);
-
-					shots++;
-				}
-
+			if (gunCoolDown.getElapsedTime().asSeconds() > 0.4) {
+				gun->shoot(bullets, musicPlayer, FriquencySummeryAtStartOfFrame);
 				gunCoolDown.restart();
 			}
 		}
 
-		txt.setString(coords);
-		
+		if (Keyboard::isKeyPressed(Keyboard::R)) {
+		}
+
+		if (Keyboard::isKeyPressed(Keyboard::A)) {
+			player->movementToLeft(1);
+			gun->followPlayer((*player->getObjectSprite()).getPosition().x, (*player->getObjectSprite()).getPosition().y);
+		}
+
+		if (Keyboard::isKeyPressed(Keyboard::D)) {
+			player->movementToRight(1);
+			gun->followPlayer((*player->getObjectSprite()).getPosition().x, (*player->getObjectSprite()).getPosition().y);
+		}
+
 		gun->followMouse(mousePosition.x, mousePosition.y);
+		//spawner->spawn(enemy);
 
-		window.clear(Color::Black);
-		window.draw(txt);
-		window.draw(gun->getSprite());
-		window.draw(player->getSprite());
+		gameWindow.clear();
 
-		for (int i = 0; i < shots; i++) {
-			if (bullets[i].getDistractedState() == false) {
-				window.draw(bullets[i].getSprite());
+		gameWindow.draw(game->getTextObj(std::to_string(gun->getAngle()), 0, 0));
+
+		//отрисовка объектов
+		gameWindow.draw(*(player->getObjectSprite()));
+
+		for (int i = 0; i < gun->getShots(); i++) {
+			if (!bullets[i].getDestractedState()) {
+				gameWindow.draw(*bullets[i].getObjectSprite());
 				bullets[i].fly(gun->getAngle());
-				bullets[i].checkForMapCollision();
-				for (int m = 0; m < enemyCount; m++) {
-					if (bullets[i].getPositionX() == enemy[m].getPositionX() && bullets[i].getPositionY() > enemy[m].getPositionY()) {
-						enemy[m].death();
-						bullets[i].projectileDistract();
-						enemyCount--;
-						shots--;
-					}
-				}
 			}
 		}
 
-		for (int i = 0; i < enemyCount; i++) {
-			if (enemy[i].getAliveState() == true) {
-				window.draw(enemy[i].getSprite());
-				enemy[i].moveToPlayer(player->getPositionX());
+		for (int i = 0; i < musicPlayer->getMusicLength(); i++) {
+			if (enemy[i].getAliveState()) {
+				gameWindow.draw(*enemy[i].getObjectSprite());
+				enemy[i].moveToPlayer((*(player->getObjectSprite())).getPosition().x, 4);
+				enemy[i].cheForBulletCollision(bullets);
 			}
 		}
 
-		window.display();
+		gameWindow.draw(*(gun->getObjectSprite()));
+		//отрисовка объектов
+
+		/*if (player->checkCollisionWithEnemy(enemy, musicPlayer->getMusicLength())) {
+			musicPlayer->stopMusic();
+			if (game->endMenu()) {
+				gameWindow.close();
+			}
+		}*/
+
+		if (musicPlayer->endOfMusic()) {
+			if (game->endMenu()) {
+				gameWindow.close();
+			}
+		}
+
+		gameWindow.display();
 	}
+}
+
+void main(void) {
+	ClassGame* game = new ClassGame();
+
+	//стартовое меню
+	if (!game->gameStartMenu()) {
+		return;
+	}
+	//стартовое меню
+
+	startGame(game);
 }

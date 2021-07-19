@@ -1,19 +1,25 @@
 #include "Classes.h"
 
-Enemy::Enemy(const char* textureName, int startPosX, int startPosY, int health) :ClassLiveObjects(textureName, startPosX, startPosY, health) {
-	_sprite.setTextureRect(IntRect(0, 0, 60, 150));
-};
-Enemy::~Enemy() {
+ClassEnemy::ClassEnemy(string textureName, int startPosX, int startPosY, int health, int rectWidth, int rectHeight) : ClassLiveObject(textureName, startPosX, startPosY, health, rectWidth, rectHeight) {};
+ClassEnemy::~ClassEnemy() {};
 
-};
+void ClassEnemy::moveToPlayer(int PlayerPosX, int movementSpeedDiescreaser) {
+	if ((*this->getObjectSprite()).getPosition().x < PlayerPosX) {
+		this->movementToRight(movementSpeedDiescreaser);
+	}
+	else if ((*this->getObjectSprite()).getPosition().x > PlayerPosX) {
+		this->movementToLeft(movementSpeedDiescreaser);
+	}
+	else {}
+}
 
-void Enemy::moveToPlayer(int PlayerPosX) {
-	if (_posX < PlayerPosX) {
-		this->movement('r', speedDiescreaser);
-	}
-	else if (_posX > PlayerPosX) {
-		this->movement('l', speedDiescreaser);
-	}
-	else {
+void ClassEnemy::cheForBulletCollision(Projectile* bulletsArray) {
+	for (int i = 0; i < 50; i++) {
+		if (!bulletsArray[i].getDestractedState()) {
+			if ((*this->getObjectSprite()).getGlobalBounds().intersects((*bulletsArray[i].getObjectSprite()).getGlobalBounds())) {
+				this->getDamage(bulletsArray[i].getBulletDamage());
+				bulletsArray[i].setDistracted();
+			}
+		}
 	}
 }

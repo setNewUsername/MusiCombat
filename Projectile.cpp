@@ -20,7 +20,7 @@ void Projectile::fly(double flyAngle) {
 		inAir = true;
 	}
 
-	(*this->getObjectSprite()).move(flySide * 0.004 * ::globalClocks, posYincreaser);
+	(*this->getObjectSprite()).move(flySide * 0.004 * ::globalClocks, posYincreaser * 13);
 
 	this->checkForMapCollision();
 }
